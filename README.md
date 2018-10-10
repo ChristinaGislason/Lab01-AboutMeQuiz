@@ -8,4 +8,5 @@ The user is prompted to answer 5 questions-- these questions require a mix of in
 Conditional statements are then used to determine if the provided answer is correct and the user is given the correct answer.
 Try/catch statements have also been incorporated into some of the questions in order to throw and catch exceptions when the program runs.
 
+
 ![Lab01-Screenshot](./Lab01-AboutMeQuizCapture.JPG)
