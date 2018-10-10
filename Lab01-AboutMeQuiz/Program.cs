@@ -10,10 +10,10 @@ namespace Lab01_AboutMeQuiz
             //Question1();
             //Question2();
             //Question3();
-            Question4();
-            //Question5();
+            //Question4();
+            Question5();
         }
-        
+        /*
         static void Question1()
         {
             int answer = 2;
@@ -112,11 +112,21 @@ namespace Lab01_AboutMeQuiz
                 return false;
             }                         
         }
-       
-        static string Question5()
+       */
+        static void Question5()
         {
-            Console.WriteLine("Question 5: Is Christina the oldest, middle, or last child in her family?");
-        }
-        */
+            string answer = "Argentina";
+            Console.WriteLine("In which country was Christina born?");
+            string guess = Console.ReadLine();
+
+            if(guess == answer)
+            {
+                Console.WriteLine("Great guess! You are correct.");
+            }
+            else
+            {
+                Console.WriteLine("Wrong, she was born in Argentina!");
+            }
+        }   
     }
 }
