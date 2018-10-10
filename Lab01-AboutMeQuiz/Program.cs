@@ -7,13 +7,13 @@ namespace Lab01_AboutMeQuiz
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //Question1();
-            //Question2();
-            //Question3();
-            //Question4();
+            Question1();
+            Question2();
+            Question3();
+            Question4();
             Question5();
         }
-        /*
+        
         static void Question1()
         {
             int answer = 2;
@@ -78,8 +78,7 @@ namespace Lab01_AboutMeQuiz
             }
 
         }
-        
-        
+          
         static void Question3()
         { 
             string answer = "no";
@@ -101,7 +100,6 @@ namespace Lab01_AboutMeQuiz
             bool answer = true;
             Console.WriteLine("Question 4: Christina was once bitten by an ostrich-- true or false?");
             bool guess = Boolean.Parse(Console.ReadLine());
-
           
             if (guess == answer)
             {
@@ -112,7 +110,7 @@ namespace Lab01_AboutMeQuiz
                 return false;
             }                         
         }
-       */
+       
         static void Question5()
         {
             string answer = "Argentina";
