@@ -9,11 +9,11 @@ namespace Lab01_AboutMeQuiz
             Console.WriteLine("Hello World!");
             //Question1();
             //Question2();
-            Question3();
-            //Question4();
+            //Question3();
+            Question4();
             //Question5();
         }
-        /*
+        
         static void Question1()
         {
             int answer = 2;
@@ -33,7 +33,7 @@ namespace Lab01_AboutMeQuiz
                 }
                 else
                 {
-                    Console.WriteLine("Aw, wrong guess!");
+                    Console.WriteLine("Aw, wrong guess! Her house set on fire twice.");
                 }
             }
 
@@ -79,45 +79,43 @@ namespace Lab01_AboutMeQuiz
 
         }
         
-        */
-        static string Question3()
-        {
-            try
+        
+        static void Question3()
+        { 
+            string answer = "no";
+            Console.Write("Question 3: Does Christina have any natural survival instincts?");
+            string guess = Console.ReadLine();
+
+            if(guess == answer)
             {
-                string answer = "no";
-                Console.Write("Question 3: Does Christina have any natural survival instincts?");
-                string guess = Console.ReadLine();
-                int value;
-
-                if (int.TryParse(guess, out value))
-                {
-                    return Question3();   
-                }
-
-                if(guess == answer)
-                {
-                    return("You're absolutely correct.");
-                }
-                else
-                {
-                    return("Sorry, incorrect!");
-                }
+                Console.WriteLine("You're absolutely correct. She can\'t swim OR camp!");
             }
-            
-            finally
+            else
             {
-                Console.WriteLine("Christina has zero survival instincts-- she can\'t swim or camp!");
-            }
+                Console.WriteLine("Incorrect! She can\'t swim OR camp!");
+            }   
         }
-        /*
-        static string Question4()
+    
+        static bool Question4()
         {
-            Console.WriteLine("Question 4: Is Christina the oldest, middle, or last child in her family?");
-        }
+            bool answer = true;
+            Console.WriteLine("Question 4: Christina was once bitten by an ostrich-- true or false?");
+            bool guess = Boolean.Parse(Console.ReadLine());
 
+          
+            if (guess == answer)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }                         
+        }
+       
         static string Question5()
         {
-            Console.WriteLine("Question 5: Does Christina have any natural survival insticts?");
+            Console.WriteLine("Question 5: Is Christina the oldest, middle, or last child in her family?");
         }
         */
     }
